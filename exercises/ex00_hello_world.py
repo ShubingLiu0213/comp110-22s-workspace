@@ -2,4 +2,7 @@
 
 __author__ = "730508266"
 
-print("Hello, world.")
+from random import randint
+
+
+print.randint(1, 100)
