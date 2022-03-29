@@ -97,4 +97,16 @@ def count(input_list: list[str]) -> dict[str, int]:
     return result
 
 
+def helper(data: dict[str, int]) -> int:
+    """ Rearranging the data according to the order of the key."""
+    temp: dict[int, int] = {}
+    new_data: dict[str, int] = {}
+    result: int = 0
+    for i in data:
+        temp[int(i)] = data[i]
+        if int(i) >= 5:
+            new_data[i] = temp[int(i)]
+    for k in new_data:
+        result += new_data[k]
+    return result
     

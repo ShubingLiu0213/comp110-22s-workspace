@@ -25,3 +25,8 @@ for roll in rolls:
     print(roll)
 
 
+def contains(needle: str, haystack: list[str]) -> bool:
+    for i in haystack:
+        if i == needle:
+            return True
+    return False
